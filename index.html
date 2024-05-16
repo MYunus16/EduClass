@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Edu Class</title>
+</head>
+<body>
+    <!------bagian navigasi----->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="assets/favicon.png">
+                <h1 class="navbar-logo">Edu Class</h1>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-menu"><a href="#home-section" class="nav-link">Beranda</a></li>
+                <li class="nav-menu"><a href="#about-section" class="nav-link">Tentang</a></li>
+                <li class="nav-menu"><a href="#courses-section" class="nav-link">Kursus</a></li>
+                <li class="nav-menu"><a href="#kritik-section" class="nav-link">Saran</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!------navigasi responsive------>
+    <div class="hamburger-navigation">
+        <div class="navbar-logo">Edu Class</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-link">
+                <li class="nav-menu"><a href="#home-section" onclick="toggleMenu()" class="nav-link">Beranda</a></li>
+                <li class="nav-menu"><a href="#about-section" onclick="toggleMenu()" class="nav-link">Tentang</a></li>
+                <li class="nav-menu"><a href="#courses-section" onclick="toggleMenu()" class="nav-link">Kursus</a></li>
+                <li class="nav-menu"><a href="#kritik-section" onclick="toggleMenu()" class="nav-link">Saran</a></li>
+            </div>
+        </div>
+    </div>
+    <!-------bagian beranda----->
+    <section class="home-section" id="home-section">  
+        <div class="home">
+            <div class="home-text">
+                <h1 style="font-size: 60px;">MARI BELAJAR<br>DARI RUMAH</h1>
+                <p style="font-size: 18px; text-align: justify;">Temukan potensi tak terbatas di dunia IT! Pelajari Front-end untuk membentuk antarmuka pengguna yang menakjubkan, 
+                    Back-end untuk menggerakkan mesin di balik layar, dan Data Analysis untuk mengungkap wawasan berharga dari data. 
+                    Siapkan diri untuk menaklukkan tantangan digital dan membuka peluang karier yang tak terbatas. 
+                    Bergabunglah dalam perjalanan membangun masa depan teknologi yang cerah!
+                </p>
+ 
+                <ul>
+                    <li><a href="#"><img src="assets/email1.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/instagram.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/wa.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="home-image">
+                <img src="assets/buku.png" alt="Buku">
+            </div>
+        </div>
+    </section>
+    <!-----bagian tentang----->
+    <section class="about-section" id="about-section">
+        <div class="about-container">
+            <div class="left-about">
+                <div class="about-img">
+                    <img src="assets/gambar1.png" alt="brand ambassador" width="300px" height="300px">
+                </div>
+            </div>
+            <div class="right-about">
+                <a href="" class="inactiveLink">Tentang Kami</a>
+                <h1>SELAMAT DATANG DI <br>PUSAT PEMBELAJARAN DARING</h1>
+                <p>Menjalin Hubungan Antar Multinasional <br>Pemerintah dan LSM Global
+                </p>
+                <ul>
+                    <li><img src="assets/check.png" alt="" width="20px" height="20px"><b>Jelajahi berbagai pengetahuan pendidikan yang keren-keren</b></li>
+                    <li><img src="assets/check.png" alt="" width="20px" height="20px"><b>Pembelajaran video interaktif yang dapat di tayangkan ulang</b></li>
+                    <li><img src="assets/check.png" alt="" width="20px" height="20px"><b>Platform kursus dengan kualitas terbaik</b></li>
+                </ul>
+                <a href="#courses-section">Lebih Lanjut</a>
+            </div>
+        </div>
+    </section>
+    <!-----bagian kursus----->
+    <section class="courses" id="courses-section">
+        <div class="courses-container">
+            <h1 class="courses-judul">Kursus Populer Kami</h1>
+            <p class="courses-teks">
+                Temukan berbagai macam manfaat yang akan Anda nikmati<br>ketika Anda menambahkan 
+                kami ke platform pembelajaran online Anda
+            </p>
+            <div class="courses-konten">
+                <div class="courses-main">
+                    <img src="assets/Data Analytics1.png" alt="data analytics">
+                    <div class="description-course">
+                        <div class="btn-container-course">
+                            <a href="data_analysis.html">Mulai Belajar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-main">
+                    <img src="assets/frondend.png" alt="frondend">
+                    <div class="description-course">
+                        <div class="btn-container-course">
+                            <a href="frond end.html">Mulai Belajar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-main">
+                    <img src="assets/backend.png" alt="backend">
+                    <div class="description-course">
+                        <div class="btn-container-course">
+                            <a href="back end.html">Mulai Belajar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--bagian list anggota kelompok-->
+    <section class="kritik-section" id="kritik-section">
+        <div class="kritik-title" id="kritik-title">
+            <h1>Kritik dan Saran</h1>
+        </div>
+        <div class="kritik-saran">
+            <div class="kritik-page">
+                <div class="content-kritik">
+                    <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="kritik-saran">Kritik dan Saran:</label>
+                <textarea id="kritik-saran" name="kritik-saran" required></textarea>
+            </div>
+                    <button type="submit" class="submit-btn">Kirim</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!--bagian footer copyright-->
+    <footer>
+        <p>Copyright © 2023 EduClass. All Rights Reserved.</p>
+    </footer>
+    <a href="#" class="to-top"><img src="assets/up-arrow.png" alt="" width="30px"  height="30px"></a>
+    <script src="js/script.js"></script>
+</body>
+</html>
